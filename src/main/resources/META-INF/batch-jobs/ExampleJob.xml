@@ -1,0 +1,9 @@
+<job id="ExampleJob" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+    <step id="process">
+        <chunk item-count="3">
+            <reader ref="io.bootique.jbatch.demo.SimpleItemReader"/>
+            <processor ref="io.bootique.jbatch.demo.SimpleItemProcessor"/>
+            <writer ref="io.bootique.jbatch.demo.SimpleItemWriter"/>
+        </chunk>
+    </step>
+</job>
